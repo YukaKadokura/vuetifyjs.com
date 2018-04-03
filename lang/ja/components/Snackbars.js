@@ -1,6 +1,6 @@
 export default {
   header: 'Snackbar',
-  headerText: ' `v-snackbar` コンポーネントは、ユーザにクイックメッセージを表示させるために使用されます。スナックバーは、配置、時間差の表示（未設定可能）、コールバックをサポートします。',
+  headerText: ' `v-snackbar` コンポーネントは、ユーザにクイックメッセージを表示させるために使用されます。スナックバーは、配置、スナックバーが隠れるまでの時間の設定、コールバックをサポートします。',
   components: ['v-snackbar'],
   examples: [{
     position: {
