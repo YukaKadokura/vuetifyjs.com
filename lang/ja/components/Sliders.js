@@ -1,34 +1,34 @@
 export default {
   header: 'Slider',
-  headerText: 'The `v-slider` component is a better visualization of the number input. It is used for gathering numerical user data.',
+  headerText: '`v-slider` コンポーネントは、数値入力における視覚化に優れています。これは、数値のユーザデータを収集するのに便利です。',
   components: ['v-slider'],
   examples: [{
     continuous: {
-      header: 'Continuous',
-      desc: 'Continuous sliders should be used when precision is not a concern.'
+      header: '連続値スライダー',
+      desc: '精度が重要でなければ、連続値スライダーを使用するのがよいでしょう。'
     },
     discrete: {
-      header: 'Discrete',
-      desc: 'Discrete sliders offer a thumb label that displays the exact current amount. Using the `step` prop you can disallow selecting values outside of steps.'
+      header: '離散値スライダー',
+      desc: '離散値スライダーは、正確な現在の量（数値）を表示するthumbラベルを提供します。 `step` propを使用すると、step値以外の数値を選択させないようにできます。'
     },
     icons: {
-      header: 'Icons',
-      desc: 'You can add icons to the slider with the `append-icon` and `prepend-icon` props.'
+      header: 'アイコン',
+      desc: '`append-icon` や `prepend-icon` を使用すると、スライダーにアイコンを追加できます。'
     },
     editableNumericValue: {
-      header: 'With an editable numeric value',
-      desc: 'Sliders can be combined with other components for a better display.'
+      header: '編集可能な数値を利用する',
+      desc: 'スライダーを他のコンポーネントと組み合わせて表示することができます。'
     },
     customColors: {
-      header: 'Custom colors',
-      desc: 'You can set the colors of the slider using the props `color`, `track-color` and `thumb-color`.'
+      header: '色のカスタマイズ',
+      desc: 'スライダーの色は、propsの `color`、` track-color`、 `thumb-color`を使って設定できます。'
     }
   }],
   props: {
-    step: 'If greater than 0, sets step interval for ticks',
-    thumbColor: 'Sets the thumb and thumb label color',
-    thumbLabel: 'Show thumb label',
+    step: '0より大きい場合に、ticks（スライダーのメモリ）のstep間隔を設定します。',
+    thumbColor: 'thumbとthumbラベルの色を設定します。',
+    thumbLabel: 'thumbラベルを表示します。',
     ticks: '',
-    trackColor: 'Sets the track fill color'
+    trackColor: 'trackの色を設定します。'
   }
 }
