@@ -1,41 +1,41 @@
 export default {
   header: 'Time picker',
-  headerText: 'The `v-time-picker` is stand-alone component that can be utilized in many existing Vuetify components. It offers the user a visual representation for selecting the time.',
+  headerText: '`v-time-picker` は、多くの既存のVuetifyコンポーネントで利用できるスタンドアロンコンポーネントです。これは、時間を選択するための視覚的表現をユーザに提供します。',
   components: ['v-time-picker'],
   examples: [{
     timeLight: {
-      header: 'Time pickers',
-      desc: 'Time pickers have the light theme enabled by default.'
+      header: 'タイムピッカー',
+      desc: 'タイムピッカーは、デフォルトでライトテーマが有効になっています。'
     },
     timeColorable: {
-      header: 'Time pickers - Colors',
-      desc: 'Time picker colors can be set using the `color` and `header-color` props. If `header-color` prop is not provided  header will use the `color` prop value.'
+      header: 'タイムピッカーの色',
+      desc: '時間ピッカーの色は、 `color` と `header-color` で設定できます。 `header-color` propが与えられていなければ、ヘッダーの色は　`color` prop値が使用されます。。'
     },
     timeDialogAndMenu: {
-      header: 'Time pickers - In dialog and menu',
-      desc: 'Due to the flexibility of pickers, you can really dial in the experience exactly how you want it.'
+      header: 'ダイアログやメニューでタイムピッカーを表示する',
+      desc: 'タイムピッカーは柔軟なので、望む方法で表示させることができます。'
     },
     time24hFormat: {
-      header: 'Time pickers - 24h format',
-      desc: 'A time picker can be switched to 24hr format.'
+      header: '24時間形式のタイムピッカー',
+      desc: 'タイムピッカーは24時間形式に切り替えることができます。'
     },
     timeAllowedTimes: {
-      header: 'Time pickers - Allowed times',
-      desc: 'You can specify allowed times using arrays, objects, and functions.'
+      header: '選択可能な時間の制限',
+      desc: '配列、オブジェクト、関数を使用することで、選択可能な時間を制限することができます。'
     },
     timeWidth: {
-      header: 'Time pickers - Setting picker width',
-      desc: 'You can specify allowed the picker\'s width or make it full width.'
+      header: 'タイムピッカーの幅の設定',
+      desc: 'タイムピッカーのの幅を指定したり、幅を可能な限り全幅にすることができます。'
     }
   }],
   props: {
     'v-time-picker': {
-      format: 'Available options are `ampm` and `24hr`',
-      allowedHours: 'Restricts which hours can be selected',
-      allowedMinutes: 'Restricts which minutes can be selected',
-      scrollable: 'Allows changing hour/minute with mouse scroll',
-      min: 'Minimum allowed time',
-      max: 'Maximum allowed time'
+      format: '利用可能なオプションは `ampm` と` 24hr` です。',
+      allowedHours: '選択可能な時間の幅を制限します。',
+      allowedMinutes: '選択可能な分の幅を制限します。',
+      scrollable: 'マウスのスクロールで時間/分を変更します。',
+      min: '選択可能な最小時刻を設定します。',
+      max: '選択可能な最大時刻を設定します。'
     }
   }
 }
