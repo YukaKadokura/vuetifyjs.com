@@ -1,36 +1,36 @@
 export default {
   header: 'Pagination',
-  headerText: 'The `v-pagination` component is used to separate long sets of data so that it is easier for a user to consume information. Depending on the length provided, the pagination component will automatically scale. To maintain the current page, simply supply a `v-model` attribute.',
+  headerText: '`v-pagination` コンポーネントは、長いデータセットを分割し、ユーザが情報を取得するのがより簡単になるように使用されます。指定された長さに応じて、ページネーションコンポーネントは自動的に拡大縮小されます。現在のページを維持するには、単に `v-model` 属性を指定すればよいです。',
   components: ['v-pagination'],
   examples: [{
     short: {
       header: 'Short',
-      desc: 'Pagination displays all pages if parent container is big enough.'
+      desc: '親コンテナが十分大きければ、ページネーションはすべてのページを表示します。'
     },
     long: {
-      header: 'Long',
-      desc: 'When the number of page buttons exceeds the parent container, the component will truncate the list.'
+      header: 'ページボタン数',
+      desc: 'ページボタンの数が親コンテナを超えると、コンポーネントはページボタンの一部を切り捨てます。'
     },
     limit: {
-      header: 'Limit',
-      desc: 'You can also manually set the maximum number of visible page buttons with the `total-visible` prop.'
+      header: 'ボタン数の制限',
+      desc: '表示可能なページボタンの最大数を手動で、 `total-visible` propで設定することもできます。'
     },
     round: {
-      header: 'Round',
-      desc: 'The alternate style for pagination is circle pages.'
+      header: '円状のボタンスタイル',
+      desc: 'ページボタンのスタイルを円状にできます。'
     },
     disabled: {
-      header: 'Disabled',
-      desc: 'Pagination items can be manually deactivated.'
+      header: '非活性',
+      desc: 'ページボタンを手動で、非活性にすることができます。'
     }
   }],
   props: {
-    circle: 'Shape pagination elements as circles',
-    disabled: 'Disables component',
-    length: 'The length of the paginator',
-    nextIcon: 'Specify the icon to use for the next icon',
-    prevIcon: 'Specify the icon to use for the prev icon',
-    totalVisible: 'Specify the max total visible pagination numbers',
-    value: 'Current selected page'
+    circle: '円状のページボタンを使用します。',
+    disabled: 'コンポーネントを非活性にします。',
+    length: 'ページネーションの長さを指定します。',
+    nextIcon: '"次のページ"を指すページボタンに使用するアイコンを指定します。',
+    prevIcon: '"前のページ"を指すページボタンに使用するアイコンを指定します。',
+    totalVisible: '表示可能な最大ページボタン（分割）数を指定します。',
+    value: '現在選択されているページを指定します。'
   }
 }
