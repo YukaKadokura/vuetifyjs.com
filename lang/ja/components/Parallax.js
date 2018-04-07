@@ -1,23 +1,23 @@
 export default {
   header: 'Parallax',
-  headerText: 'The `v-parallax` component creates a 3d effect that makes an image appear to scroll slower than the window.',
+  headerText: '`v-parallax` コンポーネントは、ウィンドゥをスクロールして、画像（画像の見えない部分）が見えるようにするための3Dエフェクトを作成します。',
   components: ['v-parallax'],
   examples: [{
     default: {
       header: 'Default',
-      desc: 'A parallax causes a shift in a background image when the user scrolls the page.'
+      desc: 'パララックスは、ユーザがページをスクロールしたときに背景画像を動かします。'
     },
     content: {
-      header: 'With content',
-      desc: 'You can also place any content inside of the parallax. This allows you to use the parallax as a hero image.'
+      header: 'コンテンツと利用する',
+      desc: 'パララックスの内側に任意のコンテンツを配置することもできます。 これにより、あなたはヒーローイメージとしてパララックスを使用することができます。'
     },
     customHeight: {
-      header: 'Custom height',
-      desc: 'You can specify a custom height on a parallax. Keep in mind this can break the parallax if your image is not sized properly'
+      header: '高さをカスタムする',
+      desc: 'パララックスの高さを指定できます。 画像のサイズが適切でない場合、パララックスを壊す可能性があることに注意してください。'
     }
   }],
   props: {
-    alt: 'Attaches an alt property to the parallax image',
-    src: 'The image to parallax'
+    alt: 'パララックスの画像にaltプロパティを付加します。',
+    src: 'パララックスを使用する画像を指定します。'
   }
 }
