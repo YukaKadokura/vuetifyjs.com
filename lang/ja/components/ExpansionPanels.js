@@ -1,37 +1,37 @@
 export default {
   header: 'Expansion Panel',
-  headerText: 'The `v-expansion-panel` component is useful for reducing vertical space with large amounts of information. The default functionality of the component is to only display one expansion-panel body at a time, however, with the `expandable` property, the expansion-panel can remain open until explicitly closed.',
+  headerText: ' `v-expansion-panel` コンポーネントは、大量の情報が存在する場合に垂直空間を減らすのに便利です。 コンポーネントのデフォルトの機能は、一度に1つの拡張パネルのみを表示することですが、  `expand` propを使用すると、拡張パネルは明示的に閉じるまで開いたままです。',
   components: ['v-expansion-panel', 'v-expansion-panel-content'],
   examples: [{
     accordion: {
-      header: 'Accordion',
-      desc: 'Accordion expansion panels can only have 1 panel open at a time.'
+      header: 'アコーディオン拡張パネル',
+      desc: 'アコーディオン拡張パネルは、一度に1つのパネルしか開くことができません。'
     },
     expand: {
-      header: 'Expand',
-      desc: 'Expand expansion panels will stay open until closed.',
+      header: '展開拡張パネル',
+      desc: '展開拡張パネルは、閉じられるまで開いたままです。',
       uninverted: true
     },
     popout: {
-      header: 'Popout & Inset',
-      desc: 'The expansion panel also has two alternative designs you can activate with the props `popout` and `inset`.',
+      header: 'ポップアウトスタイルとインセットスタイル',
+      desc: '拡張パネルには、 `popout` propと `inset` propで起動できる2つのデザインもあります。',
       inverted: true
     },
     focusable: {
-      header: 'Focusable',
-      desc: 'The expansion panel headers can be made focusable with the prop `focusable`.',
+      header: 'フォーカス可能な拡張パネルのヘッダー',
+      desc: '拡張パネルのヘッダーは、 `focusable` propでフォーカス可能にすることができます。',
       uninverted: true
     }
   }],
   props: {
     'v-expansion-panel': {
-      expand: 'Leaves expansion-panel open when selecting another',
-      focusable: 'Makes the expansion panel headers focusable',
-      inset: 'Makes the expansion panel open with a inset style',
-      popout: 'Makes the expansion panel open with an popout style'
+      expand: '別の拡張パネルを選択しても、拡張パネルが開いたままになります。',
+      focusable: '拡張パネルのヘッダーをフォーカス可能にします。',
+      inset: 'インセットスタイルで拡張パネルを開きます。',
+      popout: '拡張パネルをポップアウトスタイルで開きます。'
     },
     'v-expansion-panel-content': {
-      hideActions: 'Hide the expand icon in the content header'
+      hideActions: 'コンテンツヘッダーの展開アイコンを非表示にします。'
     }
   }
 }
